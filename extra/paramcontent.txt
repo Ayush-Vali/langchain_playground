@@ -1,0 +1,5 @@
+{
+  "searchQuery": "Machine Learning Engineer Mumbai Python",
+  "locations": ["India"],
+  "currentJobTitles": ["Machine Learning Engineer", "Data Scientist", "AI Engineer", "Senior Data Analyst"]
+}

@@ -1,0 +1,53 @@
+{
+  "rules": [
+    {
+      "tag": "ml_skills",
+      "label": "Machine Learning Skills",
+      "weight": 5,
+      "match_type": "keyword",
+      "keywords": ["machine learning", "scikit-learn", "pandas", "numpy"]
+    },
+    {
+      "tag": "python_skills",
+      "label": "Python Programming Skills",
+      "weight": 4,
+      "match_type": "keyword",
+      "keywords": ["python", "programming"]
+    },
+    {
+      "tag": "location",
+      "label": "Location",
+      "weight": 3,
+      "match_type": "location",
+      "keywords": ["mumbai", "india"]
+    },
+    {
+      "tag": "experience",
+      "label": "Relevant Experience",
+      "weight": 4,
+      "match_type": "semantic",
+      "keywords": ["machine learning engineer", "data science", "software engineering"]
+    },
+    {
+      "tag": "education",
+      "label": "Education",
+      "weight": 2,
+      "match_type": "keyword",
+      "keywords": ["bachelor's degree", "computer science", "it", "data science"]
+    },
+    {
+      "tag": "team_collaboration",
+      "label": "Team Collaboration",
+      "weight": 2,
+      "match_type": "keyword",
+      "keywords": ["team player", "collaboration", "communication"]
+    },
+    {
+      "tag": "problem_solving",
+      "label": "Problem Solving Skills",
+      "weight": 3,
+      "match_type": "semantic",
+      "keywords": ["problem solving", "model evaluation", "feature engineering"]
+    }
+  ]
+}
