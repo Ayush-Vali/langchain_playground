@@ -1,0 +1,13 @@
+How to evaluate an application's intermediate steps
+
+Copy page
+
+While, in many scenarios, it is sufficient to evaluate the final output of your task, in some cases you might want to evaluate the intermediate steps of your pipeline.
+For example, for retrieval-augmented generation (RAG), you might want to
+Evaluate the retrieval step to ensure that the correct documents are retrieved w.r.t the input query.
+Evaluate the generation step to ensure that the correct answer is generated w.r.t the retrieved documents.
+In this guide, we will use a simple, fully-custom evaluator for evaluating criteria 1 and an LLM-based evaluator for evaluating criteria 2 to highlight both scenarios.
+In order to evaluate the intermediate steps of your pipeline, your evaluator function should traverse and process the run/rootRun argument, which is a Run object that contains the intermediate steps of your pipeline.
+​
+1. Define your LLM pipeline
+The below RAG pipeline consists of 1) generating a Wikipedia query given the input question, 2) retrieving relevant documents from Wikipedia, and 3) generating an answer given the retrieved documents.
